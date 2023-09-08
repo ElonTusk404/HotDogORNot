@@ -66,7 +66,7 @@ def handle_image(message):
         os.remove(unique_filename)
 
 
-    
+
     except Exception as e:
-        bot.reply_to(message, "An error has occurred. We want to make our product better than Hooli chat so write to us @horizondevelopment ")
+        bot.reply_to(message, "An error has occurred. We want to make our product better than Hooli chat so write to us ")
 bot.polling(non_stop=True)
