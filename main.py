@@ -58,10 +58,10 @@ def handle_image(message):
 
         with open(unique_filename, 'rb') as photo:
             bot.send_photo(message.chat.id, photo, caption=result)
-
+        stats_channel = ''
         #Sending processed photos to a separate channel for statistics
         with open(unique_filename, 'rb') as photo:
-            bot.send_photo('-1001793070847', photo)
+            bot.send_photo(stats_channel, photo)
 
         os.remove(unique_filename)
 
